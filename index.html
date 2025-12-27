@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Suzanne Maria Kern - Raum für Heilung und Rückverbindung. Yoga, Coaching, Retreats in Eutin, Lappland & Italien.">
+    <title>Suzanne Maria Kern | Heilung & Yoga in Eutin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="bg-decoration">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M20 8c0 6.627-5.373 12-12 12M20 8c0 6.627 5.373 12 12 12M20 32c0-6.627-5.373-12-12-12M20 32c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Suzanne Maria Kern</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Start</a>
+                <a href="ueber-mich.html">Über mich</a>
+                <a href="angebote.html">Angebote</a>
+                <a href="kurse.html">Kurse & Termine</a>
+                <a href="events.html">Events & Retreats</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="kontakt.html" class="btn btn-primary btn-sm">Kontakt</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="angebote.html">Angebote</a></li>
+                <li><a href="kurse.html">Kurse & Termine</a></li>
+                <li><a href="events.html">Events & Retreats</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/suzannekernyoga" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@suzannekern" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Eutin · Lappland · Italien
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Raum für</span>
+                        <span class="title-accent">Heilung</span>
+                        <span class="title-line">und Rückverbindung</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">Körper · Geist · Seele · Herz</p>
+                    
+                    <p class="hero-text">
+                        Ich begleite Dich in Heilungsprozessen, Krisenzeiten und Transformationen – 
+                        liebevoll, kompetent und auf Augenhöhe. Mit über 20 Jahren Erfahrung als 
+                        Physiotherapeutin, Yogalehrerin und Bewusstseinscoach.
+                    </p>
+                    
+                    <blockquote class="hero-quote">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                        <p>Ohne Liebe, keine Heilung. Liebe ist die stärkste Medizin.</p>
+                    </blockquote>
+                    
+                    <div class="hero-actions">
+                        <a href="angebote.html" class="btn btn-primary">
+                            <span>Angebote entdecken</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="kurse.html" class="btn btn-secondary">
+                            <span>Kurse buchen</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Yoga Stunden</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Begleitete Menschen</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=750&fit=crop" alt="Suzanne Maria Kern - Yoga und Heilung" loading="eager">
+                        </div>
+                        <div class="hero-image-decoration"></div>
+                    </div>
+                    
+                    <div class="hero-floating-card card-top">
+                        <div class="floating-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="floating-text">
+                            <span class="floating-title">Nächster Kurs</span>
+                            <span class="floating-detail">Mo, 17:00 Uhr</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-floating-card card-bottom">
+                        <div class="floating-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <div class="floating-text">
+                            <span class="floating-title">2 Plätze frei</span>
+                            <span class="floating-detail">im Abendkurs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Teaser -->
+    <section class="about-teaser">
+        <div class="container">
+            <div class="about-teaser-grid">
+                <div class="about-teaser-image reveal">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&h=600&fit=crop" alt="Suzanne in Meditation" class="stack-main" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=300&h=200&fit=crop" alt="Lappland Natur" class="stack-secondary" loading="lazy">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">20+</span>
+                        <span class="exp-text">Jahre<br>Erfahrung</span>
+                    </div>
+                </div>
+                
+                <div class="about-teaser-content reveal">
+                    <span class="section-tag">Über mich</span>
+                    <h2>Mein Weg zur Heilung führte mich zu Dir</h2>
+                    
+                    <div class="about-story">
+                        <p class="lead">
+                            Geboren in Finnland, aufgewachsen zwischen zwei Kulturen. Die Natur, 
+                            die Seen und die Stille Lapplands sind meine persönliche Kraftquelle.
+                        </p>
+                        <p>
+                            Aufgrund meiner eigenen Lebensgeschichte und vielen ganzheitlichen 
+                            Ausbildungen begleite ich Menschen in körperlichen und emotionalen 
+                            Heilungsprozessen. Mein Ansatz verbindet westliche Medizin mit östlicher 
+                            Weisheit, Körperarbeit mit Seelenarbeit.
+                        </p>
+                    </div>
+                    
+                    <div class="qualifications">
+                        <div class="qual-item">
+                            <div class="qual-icon">
+                                <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="20" cy="20" r="15"/>
+                                    <path d="M20 10v10l6 4"/>
+                                </svg>
+                            </div>
+                            <div class="qual-text">
+                                <strong>Physiotherapeutin</strong>
+                                <span>Staatlich anerkannt</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <div class="qual-icon">
+                                <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M20 5c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15z"/>
+                                    <path d="M20 12v8M16 20h8"/>
+                                </svg>
+                            </div>
+                            <div class="qual-text">
+                                <strong>Yogalehrerin 500+ Std.</strong>
+                                <span>Zertifiziert</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <div class="qual-icon">
+                                <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M20 5l3.09 6.26L30 12.27l-5 4.87 1.18 6.88L20 20.77l-6.18 3.25L15 17.14l-5-4.87 6.91-1.01L20 5z"/>
+                                </svg>
+                            </div>
+                            <div class="qual-text">
+                                <strong>Bewusstseinscoach</strong>
+                                <span>Zertifiziert</span>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <div class="qual-icon">
+                                <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="20" cy="20" r="8"/>
+                                    <path d="M20 5v5M20 30v5M5 20h5M30 20h5M9.34 9.34l3.54 3.54M27.12 27.12l3.54 3.54M9.34 30.66l3.54-3.54M27.12 12.88l3.54-3.54"/>
+                                </svg>
+                            </div>
+                            <div class="qual-text">
+                                <strong>Energetikerin</strong>
+                                <span>10 Jahre Meditationsausbildung</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="ueber-mich.html" class="btn btn-outline">
+                        <span>Mehr über mich</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Angebote</span>
+                <h2>Wege der Heilung</h2>
+                <p>Entfessle Deine innere Heilkraft und finde zurück zu Dir selbst</p>
+            </div>
+            
+            <div class="services-grid">
+                <a href="angebote.html#yoga" class="service-card service-card-featured reveal">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&h=400&fit=crop" alt="Yoga Gruppen" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon-wrapper">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="15" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 25v15M20 50l10-10 10 10M15 35h30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Yoga Gruppen</h3>
+                        <p>Regelmäßige Kurse im Vielklang und Bleekergang in Eutin. Fließender Hatha Yoga und Somatic Yoga für alle Level.</p>
+                        <div class="service-meta">
+                            <span class="meta-price">150€ / 10er Block</span>
+                            <span class="meta-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="angebote.html#sessions" class="service-card reveal">
+                    <div class="service-card-content">
+                        <div class="service-icon-wrapper accent">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <path d="M30 5C17.85 5 8 14.85 8 27c0 8.28 4.5 15.5 11.2 19.4L30 55l10.8-8.6C47.5 42.5 52 35.28 52 27 52 14.85 42.15 5 30 5z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="25" r="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>1:1 Sessions</h3>
+                        <p>Individuelle Einzelsitzungen: Coaching, Körper- & Energiearbeit, transformierende Atemsessions.</p>
+                        <div class="service-meta">
+                            <span class="meta-price">ab 45€ / 30 min</span>
+                            <span class="meta-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="events.html" class="service-card reveal">
+                    <div class="service-card-content">
+                        <div class="service-icon-wrapper earth">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="22" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="30" cy="30" rx="10" ry="22" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 30h44M10 18h40M10 42h40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Retreats & Reisen</h3>
+                        <p>Transformierende Rückzugstage an besonderen Orten: Scharbeutz, Italien, Lappland.</p>
+                        <div class="service-meta">
+                            <span class="meta-price">ab 189€</span>
+                            <span class="meta-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="angebote.html#klang" class="service-card reveal">
+                    <div class="service-card-content">
+                        <div class="service-icon-wrapper purple">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="4" fill="currentColor"/>
+                                <path d="M30 8v4M30 48v4M8 30h4M48 30h4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Klangarbeit</h3>
+                        <p>Heilsame Klänge mit Kristallklangschalen und Trommeln für Entspannung und Energiebalance.</p>
+                        <div class="service-meta">
+                            <span class="meta-price">ab 45€ / 30 min</span>
+                            <span class="meta-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="services-cta reveal">
+                <a href="angebote.html" class="btn btn-primary btn-lg">
+                    <span>Alle Angebote ansehen</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="upcoming-events">
+        <div class="container">
+            <div class="events-header reveal">
+                <div class="events-header-text">
+                    <span class="section-tag">Nächste Termine</span>
+                    <h2>Kommende Events</h2>
+                </div>
+                <a href="events.html" class="btn btn-outline btn-sm">Alle Events</a>
+            </div>
+            
+            <div class="events-carousel">
+                <div class="event-card event-card-highlight reveal">
+                    <div class="event-date-badge">
+                        <span class="date-day">10</span>
+                        <span class="date-month">Jan</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag">Tagesretreat</div>
+                        <h3>Die Magie des Neuanfangs</h3>
+                        <p class="event-location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Gronenberger Mühle, Scharbeutz
+                        </p>
+                        <div class="event-details">
+                            <span>10:00–17:30 Uhr</span>
+                            <span>Nur für Frauen</span>
+                            <span>Inkl. Mittagslunch</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">
+                                <span class="price-amount">189€</span>
+                                <span class="price-status available">1 Platz frei</span>
+                            </div>
+                            <a href="kontakt.html?event=neuanfang" class="btn btn-primary btn-sm">Anmelden</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card reveal">
+                    <div class="event-date-badge small">
+                        <span class="date-day">7</span>
+                        <span class="date-month">Mär</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag">Motivations-Retreat</div>
+                        <h3>RiseSisterRise</h3>
+                        <p class="event-location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Gronenberger Mühle
+                        </p>
+                        <div class="event-footer">
+                            <a href="events.html#rise" class="btn btn-outline btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card reveal">
+                    <div class="event-date-badge small special">
+                        <span class="date-day">2-8</span>
+                        <span class="date-month">Aug</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag">Wanderreise</div>
+                        <h3>Lappland Rundreise</h3>
+                        <p class="event-location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Finnisch Lappland
+                        </p>
+                        <div class="event-footer">
+                            <a href="events.html#lappland" class="btn btn-outline btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="instagram-header reveal">
+                <div class="instagram-title">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="instagram-icon">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                    <div>
+                        <h2>@suzanne.maria.kern</h2>
+                        <p>Folge mir auf Instagram für tägliche Inspiration</p>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <span>Folgen</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="instagram-grid reveal">
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1510797215324-95aa89f43c33?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop" alt="Instagram Post" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="section-tag">Stimmen</span>
+                <h2>Was andere sagen</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 40 40" fill="currentColor" opacity="0.15">
+                            <path d="M8 24c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H8V24zm18 0c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H26V24z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        In beeindruckender Art und Weise verleiht Suzanne Yoga eine Stimme. 
+                        Einfühlsam, annehmend, gleichsam klar und deutlich – getragen von ihrer 
+                        liebevollen inneren Haltung zum Leben und zu Menschen.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div class="author-info">
+                            <strong>Dr. Jörn Redlin</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 40 40" fill="currentColor" opacity="0.15">
+                            <path d="M8 24c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H8V24zm18 0c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H26V24z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        Suzanne verkörpert spirituelle Yoga-Praxis. Aufgebaut auf dem physiotherapeutischen 
+                        Fundament, kombiniert mit energetischer Heil-Arbeit und vervollständigt durch 
+                        Hineinbringen der eigenen Transformation.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CP</div>
+                        <div class="author-info">
+                            <strong>Dr. med. Christina Petersen</strong>
+                            <span>Fachärztin für Allgemeinmedizin, Eutin</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 40 40" fill="currentColor" opacity="0.15">
+                            <path d="M8 24c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H8V24zm18 0c0-5.33 2.67-10 8-14l2 3c-4 3-6 6.33-6 10h6v12H26V24z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        Yoga mit Suzanne zu lernen ist das Beste, was man sich vorstellen kann. 
+                        Eine wahnsinnig tolle Persönlichkeit mit großem Talent positive Energie 
+                        und Wärme zu verbreiten.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KC</div>
+                        <div class="author-info">
+                            <strong>Dr. Katharina Cassebaum</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section class="blog-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Blog</span>
+                <h2>Gedanken & Impulse</h2>
+                <p>Inspiration für Deinen Weg</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card blog-card-featured reveal">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=500&fit=crop" alt="Meditation am Morgen" loading="lazy">
+                        <div class="blog-category">Meditation</div>
+                    </div>
+                    <div class="blog-content">
+                        <time datetime="2025-12-20">20. Dezember 2025</time>
+                        <h3>Warum Morgenmeditation Dein Leben verändern kann</h3>
+                        <p>Die ersten Minuten des Tages bestimmen oft, wie wir den Rest erleben. Entdecke, wie eine einfache Morgenroutine...</p>
+                        <a href="blog.html#meditation" class="read-more">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card reveal">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&h=300&fit=crop" alt="Lappland" loading="lazy">
+                        <div class="blog-category">Reisen</div>
+                    </div>
+                    <div class="blog-content">
+                        <time datetime="2025-12-15">15. Dezember 2025</time>
+                        <h3>Lappland – Mein Sehnsuchtsort</h3>
+                        <p>Was mich immer wieder in den hohen Norden zieht und warum die Stille dort so heilsam ist...</p>
+                        <a href="blog.html#lappland" class="read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card reveal">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=300&fit=crop" alt="Klangschalen" loading="lazy">
+                        <div class="blog-category">Klangarbeit</div>
+                    </div>
+                    <div class="blog-content">
+                        <time datetime="2025-12-10">10. Dezember 2025</time>
+                        <h3>Die Kraft der Klänge</h3>
+                        <p>Wie Kristallklangschalen auf Körper und Geist wirken und was bei einer Klangsession passiert...</p>
+                        <a href="blog.html#klang" class="read-more">Weiterlesen →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta reveal">
+                <a href="blog.html" class="btn btn-outline btn-lg">
+                    <span>Alle Artikel lesen</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&h=600&fit=crop" alt="Sonnenaufgang" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Bereit für Deinen nächsten Schritt?</h2>
+                <p>Ich freue mich, Dich ein Stück Deines Weges begleiten zu dürfen.</p>
+                <div class="cta-actions">
+                    <a href="kontakt.html" class="btn btn-white btn-lg">
+                        <span>Kontakt aufnehmen</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+4917672492651" class="btn btn-ghost btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <span>+49 176 72492651</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M20 8c0 6.627-5.373 12-12 12M20 8c0 6.627 5.373 12 12 12M20 32c0-6.627-5.373-12-12-12M20 32c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        Suzanne Maria Kern
+                    </a>
+                    <p class="footer-tagline">
+                        Raum für Heilung und Rückverbindung.<br>
+                        Yoga, Coaching und ganzheitliche Begleitung<br>
+                        in Eutin, Lappland und Italien.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/suzannekernyoga" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@suzannekern" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/4917672492651" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-nav-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Start</a></li>
+                            <li><a href="ueber-mich.html">Über mich</a></li>
+                            <li><a href="angebote.html">Angebote</a></li>
+                            <li><a href="kurse.html">Kurse & Termine</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Mehr</h4>
+                        <ul>
+                            <li><a href="events.html">Events & Retreats</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Rechtliches</h4>
+                        <ul>
+                            <li><a href="https://suzannekern.de/impressum/">Impressum</a></li>
+                            <li><a href="https://suzannekern.de/datenschutz/">Datenschutz</a></li>
+                            <li><a href="https://suzannekern.de/agbs/">AGB</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <address>
+                        <p>
+                            <strong>Praxis Malente-Krummsee</strong><br>
+                            Waldstr. 36<br>
+                            23714 Malente
+                        </p>
+                        <p>
+                            <a href="tel:+4917672492651">+49 176 72492651</a><br>
+                            <a href="mailto:info@bodymindpraxis-eutin.de">info@bodymindpraxis-eutin.de</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2014–2025 Suzanne Maria Kern. Alle Rechte vorbehalten.</p>
+                <p>Mit Liebe gestaltet</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

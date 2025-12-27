@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Blog von Suzanne Maria Kern - Gedanken und Impulse zu Yoga, Meditation, Heilung und persönlicher Transformation.">
+    <title>Blog | Suzanne Maria Kern</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M20 8c0 6.627-5.373 12-12 12M20 8c0 6.627 5.373 12 12 12M20 32c0-6.627-5.373-12-12-12M20 32c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Suzanne Maria Kern</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html">Start</a>
+                <a href="ueber-mich.html">Über mich</a>
+                <a href="angebote.html">Angebote</a>
+                <a href="kurse.html">Kurse & Termine</a>
+                <a href="events.html">Events & Retreats</a>
+                <a href="blog.html" class="active" aria-current="page">Blog</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="kontakt.html" class="btn btn-primary btn-sm">Kontakt</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="angebote.html">Angebote</a></li>
+                <li><a href="kurse.html">Kurse & Termine</a></li>
+                <li><a href="events.html">Events & Retreats</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Start</a>
+                <span aria-hidden="true">/</span>
+                <span class="current" aria-current="page">Blog</span>
+            </nav>
+            <h1>Gedanken & Impulse</h1>
+            <p>Inspiration für Deinen Weg zu Dir selbst</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-tabs" role="tablist" aria-label="Blog Kategorien">
+                <button class="category-tab active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+                <button class="category-tab" data-filter="yoga" role="tab" aria-selected="false">Yoga</button>
+                <button class="category-tab" data-filter="meditation" role="tab" aria-selected="false">Meditation</button>
+                <button class="category-tab" data-filter="heilung" role="tab" aria-selected="false">Heilung</button>
+                <button class="category-tab" data-filter="reisen" role="tab" aria-selected="false">Reisen</button>
+                <button class="category-tab" data-filter="persoenlich" role="tab" aria-selected="false">Persönlich</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Featured Post -->
+                <article class="blog-post blog-post-featured reveal" data-category="meditation" id="meditation">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=500&fit=crop" alt="Frau meditiert bei Sonnenaufgang am Meer" loading="lazy">
+                        <div class="post-category">Meditation</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-12-20">20. Dezember 2025</time>
+                            <span class="read-time">5 Min. Lesezeit</span>
+                        </div>
+                        <h2>Warum Morgenmeditation Dein Leben verändern kann</h2>
+                        <p class="post-excerpt">
+                            Die ersten Minuten des Tages bestimmen oft, wie wir den Rest erleben. 
+                            Wenn wir direkt nach dem Aufwachen zum Handy greifen, setzen wir uns 
+                            einem Strom von Informationen und Anforderungen aus, noch bevor wir 
+                            richtig wach sind.
+                        </p>
+                        <p>
+                            Eine kurze Morgenmeditation – schon 10 Minuten reichen – kann diesen 
+                            Kreislauf durchbrechen. Du gibst Dir selbst die Möglichkeit, in Ruhe 
+                            anzukommen, Dich zu zentrieren und bewusst in den Tag zu starten.
+                        </p>
+                        <p>
+                            In meiner eigenen Praxis habe ich erfahren, wie transformierend diese 
+                            kleine Veränderung sein kann. Die Tage, an denen ich meditiere, fühlen 
+                            sich anders an – ruhiger, klarer, weniger reaktiv auf äußere Reize.
+                        </p>
+                        <h3>So startest Du:</h3>
+                        <p>
+                            Setze Dir den Wecker 15 Minuten früher. Bleib nach dem Aufwachen 
+                            einen Moment liegen und spüre Deinen Atem. Dann setze Dich auf – 
+                            auf dem Bett ist völlig in Ordnung – und schließe die Augen. 
+                            Beobachte einfach Deinen Atem, ohne ihn zu kontrollieren. 
+                            Wenn Gedanken kommen, lass sie ziehen wie Wolken am Himmel.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <span>Von Suzanne Maria Kern</span>
+                            </div>
+                            <div class="post-share">
+                                <span>Teilen:</span>
+                                <a href="#" aria-label="Auf Facebook teilen" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </a>
+                                <a href="#" aria-label="Per E-Mail teilen">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Posts -->
+                <article class="blog-post reveal" data-category="reisen" id="lappland">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop" alt="Nordlichter über verschneiter Landschaft in Lappland" loading="lazy">
+                        <div class="post-category">Reisen</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-12-15">15. Dezember 2025</time>
+                            <span class="read-time">7 Min. Lesezeit</span>
+                        </div>
+                        <h2>Lappland – Mein Sehnsuchtsort</h2>
+                        <p class="post-excerpt">
+                            Geboren in Finnland, zieht es mich immer wieder zurück in den hohen Norden. 
+                            Lappland ist mehr als nur ein Ort für mich – es ist der Raum, in dem meine 
+                            Seele zur Ruhe kommt.
+                        </p>
+                        <a href="#" class="read-more-link">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-post reveal" data-category="heilung" id="klang">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&h=400&fit=crop" alt="Kristall-Klangschalen für Klangtherapie" loading="lazy">
+                        <div class="post-category">Heilung</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-12-10">10. Dezember 2025</time>
+                            <span class="read-time">6 Min. Lesezeit</span>
+                        </div>
+                        <h2>Die Kraft der Klänge</h2>
+                        <p class="post-excerpt">
+                            Wie Kristallklangschalen auf Körper und Geist wirken und was bei einer 
+                            Klangsession passiert. Die Schwingungen erreichen uns auf einer Ebene, 
+                            die tiefer geht als Worte.
+                        </p>
+                        <a href="#" class="read-more-link">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-post reveal" data-category="yoga">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop" alt="Frau in Yoga-Pose bei Sonnenuntergang" loading="lazy">
+                        <div class="post-category">Yoga</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-12-05">5. Dezember 2025</time>
+                            <span class="read-time">4 Min. Lesezeit</span>
+                        </div>
+                        <h2>Yoga ist mehr als Körperübungen</h2>
+                        <p class="post-excerpt">
+                            Wenn Menschen an Yoga denken, sehen sie oft akrobatische Posen auf 
+                            Instagram. Doch die wahre Essenz des Yoga liegt nicht in der perfekten 
+                            Ausführung, sondern in der Verbindung zu Dir selbst.
+                        </p>
+                        <a href="#" class="read-more-link">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-post reveal" data-category="persoenlich">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1510797215324-95aa89f43c33?w=600&h=400&fit=crop" alt="Neblige Waldlandschaft am Morgen" loading="lazy">
+                        <div class="post-category">Persönlich</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-11-28">28. November 2025</time>
+                            <span class="read-time">8 Min. Lesezeit</span>
+                        </div>
+                        <h2>Mein Weg zur Heilung</h2>
+                        <p class="post-excerpt">
+                            Heute möchte ich etwas Persönliches mit Dir teilen. Mein eigener 
+                            Heilungsweg war nicht geradlinig – er war voller Umwege, Rückschläge 
+                            und unerwarteter Wendungen.
+                        </p>
+                        <a href="#" class="read-more-link">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-post reveal" data-category="heilung">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Sonnenaufgang über dem Meer" loading="lazy">
+                        <div class="post-category">Heilung</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="2025-11-20">20. November 2025</time>
+                            <span class="read-time">5 Min. Lesezeit</span>
+                        </div>
+                        <h2>Loslassen lernen</h2>
+                        <p class="post-excerpt">
+                            Warum fällt uns das Loslassen so schwer? Wir halten fest an Menschen, 
+                            Situationen, Überzeugungen – selbst wenn sie uns nicht mehr dienen. 
+                            Die Kunst des Loslassens ist eine der wichtigsten Lektionen.
+                        </p>
+                        <a href="#" class="read-more-link">
+                            Weiterlesen
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-box reveal">
+                <div class="newsletter-content">
+                    <h3>Bleib in Verbindung</h3>
+                    <p>Erhalte neue Artikel und Inspirationen direkt in Dein Postfach.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="newsletter-email" class="visually-hidden">E-Mail-Adresse</label>
+                    <input type="email" id="newsletter-email" placeholder="Deine E-Mail-Adresse" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Anmelden</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M20 8c0 6.627-5.373 12-12 12M20 8c0 6.627 5.373 12 12 12M20 32c0-6.627-5.373-12-12-12M20 32c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        Suzanne Maria Kern
+                    </a>
+                    <p class="footer-tagline">
+                        Raum für Heilung und Rückverbindung.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/suzanne.maria.kern/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/suzannekernyoga" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://wa.me/4917672492651" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-nav-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Start</a></li>
+                            <li><a href="ueber-mich.html">Über mich</a></li>
+                            <li><a href="angebote.html">Angebote</a></li>
+                            <li><a href="kurse.html">Kurse & Termine</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Rechtliches</h4>
+                        <ul>
+                            <li><a href="https://suzannekern.de/impressum/" target="_blank" rel="noopener noreferrer">Impressum</a></li>
+                            <li><a href="https://suzannekern.de/datenschutz/" target="_blank" rel="noopener noreferrer">Datenschutz</a></li>
+                            <li><a href="https://suzannekern.de/agbs/" target="_blank" rel="noopener noreferrer">AGB</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <address>
+                        <p>
+                            <a href="tel:+4917672492651">+49 176 72492651</a><br>
+                            <a href="mailto:info@bodymindpraxis-eutin.de">info@bodymindpraxis-eutin.de</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2014–2025 Suzanne Maria Kern</p>
+                <p>Mit Liebe gestaltet</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Blog category filter
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                // Update aria-selected
+                document.querySelectorAll('.category-tab').forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+                
+                document.querySelectorAll('.blog-post').forEach(post => {
+                    if (filter === 'all' || post.dataset.category === filter) {
+                        post.style.display = '';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
